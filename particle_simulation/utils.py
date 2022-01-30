@@ -22,7 +22,7 @@ class MapSize(NamedTuple):
 
     @property
     def shape(self) -> Tuple[int, ...]:
-        return self.t_size, *self.image_shape
+        return (self.t_size, *self.image_shape)
 
     @property
     def image_shape(self) -> Tuple[int, ...]:
